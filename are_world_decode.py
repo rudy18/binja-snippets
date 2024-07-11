@@ -12,7 +12,7 @@ Each instruction in mlil is given a tuple of operands. We are looking for when t
 in this sample (and maybe in general but not sure yet) a single operand we are interested in looks
 like this:
 
-[('dest', <var char var_94[0x80]>, 'Variable'), ('offset', 0, 'int'), ('src', <MediumLevelILConst: 1>, 'MediumLevelILInstruction')]
+[('dest', <var char str_bytes[0x80]>, 'Variable'), ('offset', 0, 'int'), ('src', <MediumLevelILConst: 1>, 'MediumLevelILInstruction')]
 
 What we are interested in in the list above are the offset and the value being set. Based on the decryption
 we only care about odd offsets (due to the modulo 2).
